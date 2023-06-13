@@ -1,9 +1,11 @@
 <map id="span.h" name="span.h">
-<area shape="rect" id="node1" title="Provides a gul14::span that mimicks C++20&#39;s std::span as closely as possible." alt="" coords="226,5,291,32"/>
+<area shape="rect" id="node1" title="Provides a gul14::span that mimicks C++20&#39;s std::span as closely as possible." alt="" coords="270,5,335,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,61,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="86,80,157,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="181,80,248,107"/>
 <area shape="rect" id="node5" title=" " alt="" coords="272,80,333,107"/>
 <area shape="rect" id="node6" title=" " alt="" coords="358,80,445,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="469,80,561,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="437,155,529,181"/>
+<area shape="rect" id="node8" href="$traits_8h.html" title="Some metaprogramming traits for the General Utility Library." alt="" coords="521,80,629,107"/>
+<area shape="rect" id="node9" href="$internal_8h.html" title="Definition of macros used internally by GUL." alt="" coords="553,155,677,181"/>
 </map>

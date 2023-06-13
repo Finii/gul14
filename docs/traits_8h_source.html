@@ -21,7 +21,7 @@
   <td id="projectlogo"><img alt="Logo" src="gul14.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">General Utility Library for C++14
-   &#160;<span id="projectnumber">2.7</span>
+   &#160;<span id="projectnumber">2.9</span>
    </div>
   </td>
  </tr>
@@ -54,30 +54,45 @@ $(function() {
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define GUL14_TRAITS_H_</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="internal_8h.html">gul14/internal.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegul14.html">gul14</a> {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = <span class="keywordtype">int</span>&gt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structgul14_1_1IsContainerLike.html">   45</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structgul14_1_1IsContainerLike.html">IsContainerLike</a> : std::false_type { };</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">struct </span><a class="code" href="structgul14_1_1IsContainerLike.html">IsContainerLike</a> &lt;T,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    typename std::enable_if_t&lt;true,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        decltype(std::declval&lt;T&gt;().cbegin(),</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            std::declval&lt;T&gt;().cend(),</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            std::declval&lt;typename T::value_type&gt;(),</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            0)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    &gt;&gt;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    : std::true_type { };</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// namespace gul14</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// vi:ts=4:sw=4:sts=4:et</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="internal_8h.html">gul14/internal.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegul14.html">gul14</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = <span class="keywordtype">int</span>&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structgul14_1_1IsContainerLike.html">   53</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structgul14_1_1IsContainerLike.html">IsContainerLike</a> : std::false_type { };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">struct </span><a class="code" href="structgul14_1_1IsContainerLike.html">IsContainerLike</a> &lt;T,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    typename std::enable_if_t&lt;true,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        decltype(std::declval&lt;T&gt;().cbegin(),</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            std::declval&lt;T&gt;().cend(),</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            std::declval&lt;typename T::value_type&gt;(),</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            0)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    &gt;&gt;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    : std::true_type { };</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group__traits__h.html#gad38917e864c089423ff4e1abaed5d83a">   75</a></span>&#160;<span class="keyword">using</span> <a class="code" href="group__traits__h.html#gad38917e864c089423ff4e1abaed5d83a">remove_cvref</a> = <span class="keyword">typename</span> std::remove_cv&lt;std::remove_reference_t&lt;T&gt;&gt;;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group__traits__h.html#ga28183aba128308ee3c88345edb3900b6">   87</a></span>&#160;<span class="keyword">using</span> <a class="code" href="group__traits__h.html#ga28183aba128308ee3c88345edb3900b6">remove_cvref_t</a> = <span class="keyword">typename</span> <a class="code" href="group__traits__h.html#gad38917e864c089423ff4e1abaed5d83a">remove_cvref&lt;T&gt;::type</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>...&gt;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group__traits__h.html#ga877d353771f764183c737b09a25fc5e3">   98</a></span>&#160;<span class="keyword">using</span> <a class="code" href="group__traits__h.html#ga877d353771f764183c737b09a25fc5e3">void_t</a> = void;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <span class="comment">// namespace gul14</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">// vi:ts=4:sw=4:sts=4:et</span></div>
+<div class="ttc" id="agroup__traits__h_html_ga28183aba128308ee3c88345edb3900b6"><div class="ttname"><a href="group__traits__h.html#ga28183aba128308ee3c88345edb3900b6">gul14::remove_cvref_t</a></div><div class="ttdeci">typename remove_cvref&lt; T &gt;::type remove_cvref_t</div><div class="ttdoc">A template metafunction that removes const, volatile, and reference qualifiers from a type.</div><div class="ttdef"><b>Definition:</b> traits.h:87</div></div>
+<div class="ttc" id="agroup__traits__h_html_ga877d353771f764183c737b09a25fc5e3"><div class="ttname"><a href="group__traits__h.html#ga877d353771f764183c737b09a25fc5e3">gul14::void_t</a></div><div class="ttdeci">void void_t</div><div class="ttdoc">A type mapping an arbitrary list of types to void (for SFINAE).</div><div class="ttdef"><b>Definition:</b> traits.h:98</div></div>
+<div class="ttc" id="agroup__traits__h_html_gad38917e864c089423ff4e1abaed5d83a"><div class="ttname"><a href="group__traits__h.html#gad38917e864c089423ff4e1abaed5d83a">gul14::remove_cvref</a></div><div class="ttdeci">typename std::remove_cv&lt; std::remove_reference_t&lt; T &gt; &gt; remove_cvref</div><div class="ttdoc">A template metafunction that removes const, volatile, and reference qualifiers from a type.</div><div class="ttdef"><b>Definition:</b> traits.h:75</div></div>
 <div class="ttc" id="ainternal_8h_html"><div class="ttname"><a href="internal_8h.html">internal.h</a></div><div class="ttdoc">Definition of macros used internally by GUL.</div></div>
 <div class="ttc" id="anamespacegul14_html"><div class="ttname"><a href="namespacegul14.html">gul14</a></div><div class="ttdoc">Namespace gul14 contains all functions and classes of the General Utility Library.</div><div class="ttdef"><b>Definition:</b> doxygen.h:26</div></div>
-<div class="ttc" id="astructgul14_1_1IsContainerLike_html"><div class="ttname"><a href="structgul14_1_1IsContainerLike.html">gul14::IsContainerLike</a></div><div class="ttdoc">Helper type trait object to determine if a type is a container.</div><div class="ttdef"><b>Definition:</b> traits.h:45</div></div>
+<div class="ttc" id="astructgul14_1_1IsContainerLike_html"><div class="ttname"><a href="structgul14_1_1IsContainerLike.html">gul14::IsContainerLike</a></div><div class="ttdoc">Helper type trait object to determine if a type is a container.</div><div class="ttdef"><b>Definition:</b> traits.h:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->

@@ -21,7 +21,7 @@
   <td id="projectlogo"><img alt="Logo" src="gul14.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">General Utility Library for C++14
-   &#160;<span id="projectnumber">2.7</span>
+   &#160;<span id="projectnumber">2.9</span>
    </div>
   </td>
  </tr>
@@ -956,7 +956,7 @@ $(function() {
 <div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;{};</div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160; </div>
 <div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="keyword">struct </span>is_clock&lt;T, std::void_t&lt;decltype(T::now()), typename T::rep, typename T::period,</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="keyword">struct </span>is_clock&lt;T, std::<a class="code" href="group__traits__h.html#ga877d353771f764183c737b09a25fc5e3">void_t</a>&lt;decltype(T::now()), typename T::rep, typename T::period,</div>
 <div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;                               typename T::duration, typename T::time_point,</div>
 <div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;                               decltype(T::is_steady)&gt;&gt;</div>
 <div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    : std::true_type</div>
@@ -1264,7 +1264,7 @@ $(function() {
 <div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;          &gt;::type&gt;</div>
 <div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;constexpr</div>
 <div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;std::chrono::duration&lt;Rep, Period&gt;</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;<a class="code" href="namespacegul14.html#a02e71867d1a27d723ee0c2a3bcd7761c">abs</a>(std::chrono::duration&lt;Rep, Period&gt; d)</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;<a class="code" href="group__num__util__h.html#ga02e71867d1a27d723ee0c2a3bcd7761c">abs</a>(std::chrono::duration&lt;Rep, Period&gt; d)</div>
 <div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;{</div>
 <div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;    <span class="keywordflow">return</span> d &gt;= d.zero() ? d : -d;</div>
 <div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;}</div>
@@ -1304,7 +1304,7 @@ $(function() {
 <div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;<span class="keyword">using</span> std::chrono::floor;</div>
 <div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;<span class="keyword">using</span> std::chrono::ceil;</div>
 <div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;<span class="keyword">using</span> std::chrono::round;</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;<span class="keyword">using</span> <a class="code" href="namespacegul14.html#a02e71867d1a27d723ee0c2a3bcd7761c">std::chrono::abs</a>;</div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;<span class="keyword">using</span> <a class="code" href="group__num__util__h.html#ga02e71867d1a27d723ee0c2a3bcd7761c">std::chrono::abs</a>;</div>
 <div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160; </div>
 <div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// HAS_CHRONO_ROUNDING</span></div>
 <div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160; </div>
@@ -3640,7 +3640,7 @@ $(function() {
 <div class="line"><a name="l03628"></a><span class="lineno"> 3628</span>&#160;            std::numeric_limits&lt;Rep&gt;::is_signed,</div>
 <div class="line"><a name="l03629"></a><span class="lineno"> 3629</span>&#160;            std::chrono::duration&lt;Rep, Period&gt;</div>
 <div class="line"><a name="l03630"></a><span class="lineno"> 3630</span>&#160;         &gt;::type</div>
-<div class="line"><a name="l03631"></a><span class="lineno"> 3631</span>&#160;<a class="code" href="namespacegul14.html#a02e71867d1a27d723ee0c2a3bcd7761c">abs</a>(std::chrono::duration&lt;Rep, Period&gt; d)</div>
+<div class="line"><a name="l03631"></a><span class="lineno"> 3631</span>&#160;<a class="code" href="group__num__util__h.html#ga02e71867d1a27d723ee0c2a3bcd7761c">abs</a>(std::chrono::duration&lt;Rep, Period&gt; d)</div>
 <div class="line"><a name="l03632"></a><span class="lineno"> 3632</span>&#160;{</div>
 <div class="line"><a name="l03633"></a><span class="lineno"> 3633</span>&#160;    <span class="keywordflow">return</span> d &gt;= d.zero() ? +d : -d;</div>
 <div class="line"><a name="l03634"></a><span class="lineno"> 3634</span>&#160;}</div>
@@ -3652,7 +3652,7 @@ $(function() {
 <div class="line"><a name="l03640"></a><span class="lineno"> 3640</span>&#160;            !std::numeric_limits&lt;Rep&gt;::is_signed,</div>
 <div class="line"><a name="l03641"></a><span class="lineno"> 3641</span>&#160;            std::chrono::duration&lt;Rep, Period&gt;</div>
 <div class="line"><a name="l03642"></a><span class="lineno"> 3642</span>&#160;         &gt;::type</div>
-<div class="line"><a name="l03643"></a><span class="lineno"> 3643</span>&#160;<a class="code" href="namespacegul14.html#a02e71867d1a27d723ee0c2a3bcd7761c">abs</a>(std::chrono::duration&lt;Rep, Period&gt; d)</div>
+<div class="line"><a name="l03643"></a><span class="lineno"> 3643</span>&#160;<a class="code" href="group__num__util__h.html#ga02e71867d1a27d723ee0c2a3bcd7761c">abs</a>(std::chrono::duration&lt;Rep, Period&gt; d)</div>
 <div class="line"><a name="l03644"></a><span class="lineno"> 3644</span>&#160;{</div>
 <div class="line"><a name="l03645"></a><span class="lineno"> 3645</span>&#160;    <span class="keywordflow">return</span> d;</div>
 <div class="line"><a name="l03646"></a><span class="lineno"> 3646</span>&#160;}</div>
@@ -3679,9 +3679,9 @@ $(function() {
 <div class="line"><a name="l03667"></a><span class="lineno"> 3667</span>&#160;        {}</div>
 <div class="line"><a name="l03668"></a><span class="lineno"> 3668</span>&#160; </div>
 <div class="line"><a name="l03669"></a><span class="lineno"> 3669</span>&#160;    constexpr <span class="keyword">explicit</span> hh_mm_ss(Duration d) noexcept</div>
-<div class="line"><a name="l03670"></a><span class="lineno"> 3670</span>&#160;        : h_(std::chrono::duration_cast&lt;std::chrono::hours&gt;(<a class="code" href="namespacegul14.html#a02e71867d1a27d723ee0c2a3bcd7761c">detail::abs</a>(d)))</div>
-<div class="line"><a name="l03671"></a><span class="lineno"> 3671</span>&#160;        , m_(std::chrono::duration_cast&lt;std::chrono::minutes&gt;(<a class="code" href="namespacegul14.html#a02e71867d1a27d723ee0c2a3bcd7761c">detail::abs</a>(d)) - h_)</div>
-<div class="line"><a name="l03672"></a><span class="lineno"> 3672</span>&#160;        , s_(<a class="code" href="namespacegul14.html#a02e71867d1a27d723ee0c2a3bcd7761c">detail::abs</a>(d) - h_ - m_)</div>
+<div class="line"><a name="l03670"></a><span class="lineno"> 3670</span>&#160;        : h_(std::chrono::duration_cast&lt;std::chrono::hours&gt;(<a class="code" href="group__num__util__h.html#ga02e71867d1a27d723ee0c2a3bcd7761c">detail::abs</a>(d)))</div>
+<div class="line"><a name="l03671"></a><span class="lineno"> 3671</span>&#160;        , m_(std::chrono::duration_cast&lt;std::chrono::minutes&gt;(<a class="code" href="group__num__util__h.html#ga02e71867d1a27d723ee0c2a3bcd7761c">detail::abs</a>(d)) - h_)</div>
+<div class="line"><a name="l03672"></a><span class="lineno"> 3672</span>&#160;        , s_(<a class="code" href="group__num__util__h.html#ga02e71867d1a27d723ee0c2a3bcd7761c">detail::abs</a>(d) - h_ - m_)</div>
 <div class="line"><a name="l03673"></a><span class="lineno"> 3673</span>&#160;        , neg_(d &lt; Duration::zero())</div>
 <div class="line"><a name="l03674"></a><span class="lineno"> 3674</span>&#160;        {}</div>
 <div class="line"><a name="l03675"></a><span class="lineno"> 3675</span>&#160; </div>
@@ -5514,7 +5514,7 @@ $(function() {
 <div class="line"><a name="l05502"></a><span class="lineno"> 5502</span>&#160;                <span class="keywordflow">if</span> (modified == CharT{})</div>
 <div class="line"><a name="l05503"></a><span class="lineno"> 5503</span>&#160;                {</div>
 <div class="line"><a name="l05504"></a><span class="lineno"> 5504</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l05505"></a><span class="lineno"> 5505</span>&#160;                    y = <a class="code" href="namespacegul14.html#a02e71867d1a27d723ee0c2a3bcd7761c">std::abs</a>(y) % 100;</div>
+<div class="line"><a name="l05505"></a><span class="lineno"> 5505</span>&#160;                    y = <a class="code" href="group__num__util__h.html#ga02e71867d1a27d723ee0c2a3bcd7761c">std::abs</a>(y) % 100;</div>
 <div class="line"><a name="l05506"></a><span class="lineno"> 5506</span>&#160;                    <span class="keywordflow">if</span> (y &lt; 10)</div>
 <div class="line"><a name="l05507"></a><span class="lineno"> 5507</span>&#160;                        os &lt;&lt; CharT{<span class="charliteral">&#39;0&#39;</span>};</div>
 <div class="line"><a name="l05508"></a><span class="lineno"> 5508</span>&#160;                    os &lt;&lt; y;</div>
@@ -5577,7 +5577,7 @@ $(function() {
 <div class="line"><a name="l05565"></a><span class="lineno"> 5565</span>&#160;                }</div>
 <div class="line"><a name="l05566"></a><span class="lineno"> 5566</span>&#160;                <span class="keyword">auto</span> m = duration_cast&lt;minutes&gt;(*offset_sec);</div>
 <div class="line"><a name="l05567"></a><span class="lineno"> 5567</span>&#160;                <span class="keyword">auto</span> neg = m &lt; minutes{0};</div>
-<div class="line"><a name="l05568"></a><span class="lineno"> 5568</span>&#160;                m = <a class="code" href="namespacegul14.html#a02e71867d1a27d723ee0c2a3bcd7761c">gul14::date::abs</a>(m);</div>
+<div class="line"><a name="l05568"></a><span class="lineno"> 5568</span>&#160;                m = <a class="code" href="group__num__util__h.html#ga02e71867d1a27d723ee0c2a3bcd7761c">gul14::date::abs</a>(m);</div>
 <div class="line"><a name="l05569"></a><span class="lineno"> 5569</span>&#160;                <span class="keyword">auto</span> h = duration_cast&lt;hours&gt;(m);</div>
 <div class="line"><a name="l05570"></a><span class="lineno"> 5570</span>&#160;                m -= h;</div>
 <div class="line"><a name="l05571"></a><span class="lineno"> 5571</span>&#160;                <span class="keywordflow">if</span> (neg)</div>
@@ -7080,7 +7080,7 @@ $(function() {
 <div class="line"><a name="l07068"></a><span class="lineno"> 7068</span>&#160;                    {</div>
 <div class="line"><a name="l07069"></a><span class="lineno"> 7069</span>&#160;                        read(is, rs{tH, 2, 2});</div>
 <div class="line"><a name="l07070"></a><span class="lineno"> 7070</span>&#160;                        <span class="keywordflow">if</span> (!is.fail())</div>
-<div class="line"><a name="l07071"></a><span class="lineno"> 7071</span>&#160;                            toff = hours{<a class="code" href="namespacegul14.html#a02e71867d1a27d723ee0c2a3bcd7761c">std::abs</a>(tH)};</div>
+<div class="line"><a name="l07071"></a><span class="lineno"> 7071</span>&#160;                            toff = hours{<a class="code" href="group__num__util__h.html#ga02e71867d1a27d723ee0c2a3bcd7761c">std::abs</a>(tH)};</div>
 <div class="line"><a name="l07072"></a><span class="lineno"> 7072</span>&#160;                        <span class="keywordflow">if</span> (is.good())</div>
 <div class="line"><a name="l07073"></a><span class="lineno"> 7073</span>&#160;                        {</div>
 <div class="line"><a name="l07074"></a><span class="lineno"> 7074</span>&#160;                            ic = is.peek();</div>
@@ -7100,7 +7100,7 @@ $(function() {
 <div class="line"><a name="l07088"></a><span class="lineno"> 7088</span>&#160;                    {</div>
 <div class="line"><a name="l07089"></a><span class="lineno"> 7089</span>&#160;                        read(is, rs{tH, 1, 2});</div>
 <div class="line"><a name="l07090"></a><span class="lineno"> 7090</span>&#160;                        <span class="keywordflow">if</span> (!is.fail())</div>
-<div class="line"><a name="l07091"></a><span class="lineno"> 7091</span>&#160;                            toff = hours{<a class="code" href="namespacegul14.html#a02e71867d1a27d723ee0c2a3bcd7761c">std::abs</a>(tH)};</div>
+<div class="line"><a name="l07091"></a><span class="lineno"> 7091</span>&#160;                            toff = hours{<a class="code" href="group__num__util__h.html#ga02e71867d1a27d723ee0c2a3bcd7761c">std::abs</a>(tH)};</div>
 <div class="line"><a name="l07092"></a><span class="lineno"> 7092</span>&#160;                        <span class="keywordflow">if</span> (is.good())</div>
 <div class="line"><a name="l07093"></a><span class="lineno"> 7093</span>&#160;                        {</div>
 <div class="line"><a name="l07094"></a><span class="lineno"> 7094</span>&#160;                            ic = is.peek();</div>
@@ -7781,9 +7781,10 @@ $(function() {
 <div class="line"><a name="l07769"></a><span class="lineno"> 7769</span>&#160; </div>
 <div class="line"><a name="l07771"></a><span class="lineno"> 7771</span>&#160; </div>
 <div class="line"><a name="l07772"></a><span class="lineno"> 7772</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// GUL14_DATE_H_</span></div>
-<div class="ttc" id="aclassgul14_1_1basic__string__view_html"><div class="ttname"><a href="classgul14_1_1basic__string__view.html">gul14::basic_string_view</a></div><div class="ttdoc">A view to a contiguous sequence of chars or char-like objects.</div><div class="ttdef"><b>Definition:</b> string_view.h:107</div></div>
+<div class="ttc" id="aclassgul14_1_1basic__string__view_html"><div class="ttname"><a href="classgul14_1_1basic__string__view.html">gul14::basic_string_view</a></div><div class="ttdoc">A view to a contiguous sequence of chars or char-like objects.</div><div class="ttdef"><b>Definition:</b> string_view.h:114</div></div>
+<div class="ttc" id="agroup__num__util__h_html_ga02e71867d1a27d723ee0c2a3bcd7761c"><div class="ttname"><a href="group__num__util__h.html#ga02e71867d1a27d723ee0c2a3bcd7761c">gul14::abs</a></div><div class="ttdeci">constexpr auto abs(ValueT n) noexcept -&gt; std::enable_if_t&lt; std::is_unsigned&lt; ValueT &gt;::value, ValueT &gt;</div><div class="ttdoc">Compute the absolute value of a number.</div><div class="ttdef"><b>Definition:</b> num_util.h:53</div></div>
+<div class="ttc" id="agroup__traits__h_html_ga877d353771f764183c737b09a25fc5e3"><div class="ttname"><a href="group__traits__h.html#ga877d353771f764183c737b09a25fc5e3">gul14::void_t</a></div><div class="ttdeci">void void_t</div><div class="ttdoc">A type mapping an arbitrary list of types to void (for SFINAE).</div><div class="ttdef"><b>Definition:</b> traits.h:98</div></div>
 <div class="ttc" id="anamespacegul14_html"><div class="ttname"><a href="namespacegul14.html">gul14</a></div><div class="ttdoc">Namespace gul14 contains all functions and classes of the General Utility Library.</div><div class="ttdef"><b>Definition:</b> doxygen.h:26</div></div>
-<div class="ttc" id="anamespacegul14_html_a02e71867d1a27d723ee0c2a3bcd7761c"><div class="ttname"><a href="namespacegul14.html#a02e71867d1a27d723ee0c2a3bcd7761c">gul14::abs</a></div><div class="ttdeci">constexpr auto abs(ValueT n) noexcept -&gt; std::enable_if_t&lt; std::is_unsigned&lt; ValueT &gt;::value, ValueT &gt;</div><div class="ttdoc">Compute the absolute value of a number.</div><div class="ttdef"><b>Definition:</b> num_util.h:47</div></div>
 <div class="ttc" id="astring__view_8h_html"><div class="ttname"><a href="string__view_8h.html">string_view.h</a></div><div class="ttdoc">Provides a gul14::string_view that is fully compatible with C++17's std::string_view.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.17-->

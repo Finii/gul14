@@ -21,7 +21,7 @@
   <td id="projectlogo"><img alt="Logo" src="gul14.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">General Utility Library for C++14
-   &#160;<span id="projectnumber">2.7</span>
+   &#160;<span id="projectnumber">2.9</span>
    </div>
   </td>
  </tr>
@@ -57,7 +57,7 @@ $(function() {
 <div class="textblock"><p>Declaration of bit manipulation utility functions for the General Utility Library. </p>
 <dl class="section author"><dt>Authors</dt><dd><a class="el" href="contributors_and_copyright.html#contributors">General Utility Library Contributors</a> </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>Created on 17 October 2019</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright 2019-2020 Deutsches Elektronen-Synchrotron (DESY), Hamburg</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright 2019-2023 Deutsches Elektronen-Synchrotron (DESY), Hamburg</dd></dl>
 <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 2.1 of the license, or (at your option) any later version.</p>
 <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
 <p>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. </p>
@@ -95,33 +95,33 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:afc1d6e2f0688dc334f92653ae1f7a5fa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afc1d6e2f0688dc334f92653ae1f7a5fa"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegul14.html#afc1d6e2f0688dc334f92653ae1f7a5fa">gul14::BitFunctionReturnType</a> = std::enable_if_t&lt; std::is_integral&lt; T &gt;::value and not std::is_same&lt; std::decay_t&lt; T &gt;, bool &gt;::value, std::decay_t&lt; T &gt; &gt;</td></tr>
-<tr class="memdesc:afc1d6e2f0688dc334f92653ae1f7a5fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type of the bit manipulation functions.  <a href="namespacegul14.html#afc1d6e2f0688dc334f92653ae1f7a5fa">More...</a><br /></td></tr>
-<tr class="separator:afc1d6e2f0688dc334f92653ae1f7a5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc1d6e2f0688dc334f92653ae1f7a5fa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gafc1d6e2f0688dc334f92653ae1f7a5fa"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit__manip__h.html#gafc1d6e2f0688dc334f92653ae1f7a5fa">gul14::BitFunctionReturnType</a> = std::enable_if_t&lt; std::is_integral&lt; T &gt;::value and not std::is_same&lt; std::decay_t&lt; T &gt;, bool &gt;::value, std::decay_t&lt; T &gt; &gt;</td></tr>
+<tr class="memdesc:gafc1d6e2f0688dc334f92653ae1f7a5fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type of the bit manipulation functions.  <a href="group__bit__manip__h.html#gafc1d6e2f0688dc334f92653ae1f7a5fa">More...</a><br /></td></tr>
+<tr class="separator:gafc1d6e2f0688dc334f92653ae1f7a5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a65b66729b7fb79ec00fcff24eb3fcf13"><td class="memTemplParams" colspan="2">template&lt;typename T  = unsigned, typename ReturnT  = BitFunctionReturnType&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:a65b66729b7fb79ec00fcff24eb3fcf13"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegul14.html#a65b66729b7fb79ec00fcff24eb3fcf13">gul14::bit_set</a> (unsigned bit) noexcept -&gt; ReturnT</td></tr>
-<tr class="memdesc:a65b66729b7fb79ec00fcff24eb3fcf13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a bit in an integral type.  <a href="namespacegul14.html#a65b66729b7fb79ec00fcff24eb3fcf13">More...</a><br /></td></tr>
-<tr class="separator:a65b66729b7fb79ec00fcff24eb3fcf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf64b788578bb3caa75680663677de9a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename ReturnT  = BitFunctionReturnType&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:acf64b788578bb3caa75680663677de9a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegul14.html#acf64b788578bb3caa75680663677de9a">gul14::bit_set</a> (T previous, unsigned bit) noexcept -&gt; ReturnT</td></tr>
-<tr class="memdesc:acf64b788578bb3caa75680663677de9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a bit in an integral value.  <a href="namespacegul14.html#acf64b788578bb3caa75680663677de9a">More...</a><br /></td></tr>
-<tr class="separator:acf64b788578bb3caa75680663677de9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad702fe0f272a70a4da6f63de30bd295"><td class="memTemplParams" colspan="2">template&lt;typename T , typename ReturnT  = BitFunctionReturnType&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:aad702fe0f272a70a4da6f63de30bd295"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegul14.html#aad702fe0f272a70a4da6f63de30bd295">gul14::bit_reset</a> (T previous, unsigned bit) noexcept -&gt; ReturnT</td></tr>
-<tr class="memdesc:aad702fe0f272a70a4da6f63de30bd295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset a bit in an integral value.  <a href="namespacegul14.html#aad702fe0f272a70a4da6f63de30bd295">More...</a><br /></td></tr>
-<tr class="separator:aad702fe0f272a70a4da6f63de30bd295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b584ad55786999bbb6f822345d7cfef"><td class="memTemplParams" colspan="2">template&lt;typename T , typename ReturnT  = BitFunctionReturnType&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:a6b584ad55786999bbb6f822345d7cfef"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegul14.html#a6b584ad55786999bbb6f822345d7cfef">gul14::bit_flip</a> (T previous, unsigned bit) noexcept -&gt; ReturnT</td></tr>
-<tr class="memdesc:a6b584ad55786999bbb6f822345d7cfef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flip a bit in an integral value.  <a href="namespacegul14.html#a6b584ad55786999bbb6f822345d7cfef">More...</a><br /></td></tr>
-<tr class="separator:a6b584ad55786999bbb6f822345d7cfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a908d23e591803cc8c98d63ba04ff0f1a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a908d23e591803cc8c98d63ba04ff0f1a"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegul14.html#a908d23e591803cc8c98d63ba04ff0f1a">gul14::bit_test</a> (T bits, unsigned bit) noexcept</td></tr>
-<tr class="memdesc:a908d23e591803cc8c98d63ba04ff0f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a bit in an integral value.  <a href="namespacegul14.html#a908d23e591803cc8c98d63ba04ff0f1a">More...</a><br /></td></tr>
-<tr class="separator:a908d23e591803cc8c98d63ba04ff0f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65b66729b7fb79ec00fcff24eb3fcf13"><td class="memTemplParams" colspan="2">template&lt;typename T  = unsigned, typename ReturnT  = BitFunctionReturnType&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ga65b66729b7fb79ec00fcff24eb3fcf13"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit__manip__h.html#ga65b66729b7fb79ec00fcff24eb3fcf13">gul14::bit_set</a> (unsigned bit) noexcept -&gt; ReturnT</td></tr>
+<tr class="memdesc:ga65b66729b7fb79ec00fcff24eb3fcf13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a bit in an integral type.  <a href="group__bit__manip__h.html#ga65b66729b7fb79ec00fcff24eb3fcf13">More...</a><br /></td></tr>
+<tr class="separator:ga65b66729b7fb79ec00fcff24eb3fcf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf64b788578bb3caa75680663677de9a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename ReturnT  = BitFunctionReturnType&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:gacf64b788578bb3caa75680663677de9a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit__manip__h.html#gacf64b788578bb3caa75680663677de9a">gul14::bit_set</a> (T previous, unsigned bit) noexcept -&gt; ReturnT</td></tr>
+<tr class="memdesc:gacf64b788578bb3caa75680663677de9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a bit in an integral value.  <a href="group__bit__manip__h.html#gacf64b788578bb3caa75680663677de9a">More...</a><br /></td></tr>
+<tr class="separator:gacf64b788578bb3caa75680663677de9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad702fe0f272a70a4da6f63de30bd295"><td class="memTemplParams" colspan="2">template&lt;typename T , typename ReturnT  = BitFunctionReturnType&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:gaad702fe0f272a70a4da6f63de30bd295"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit__manip__h.html#gaad702fe0f272a70a4da6f63de30bd295">gul14::bit_reset</a> (T previous, unsigned bit) noexcept -&gt; ReturnT</td></tr>
+<tr class="memdesc:gaad702fe0f272a70a4da6f63de30bd295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset a bit in an integral value.  <a href="group__bit__manip__h.html#gaad702fe0f272a70a4da6f63de30bd295">More...</a><br /></td></tr>
+<tr class="separator:gaad702fe0f272a70a4da6f63de30bd295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b584ad55786999bbb6f822345d7cfef"><td class="memTemplParams" colspan="2">template&lt;typename T , typename ReturnT  = BitFunctionReturnType&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ga6b584ad55786999bbb6f822345d7cfef"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit__manip__h.html#ga6b584ad55786999bbb6f822345d7cfef">gul14::bit_flip</a> (T previous, unsigned bit) noexcept -&gt; ReturnT</td></tr>
+<tr class="memdesc:ga6b584ad55786999bbb6f822345d7cfef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flip a bit in an integral value.  <a href="group__bit__manip__h.html#ga6b584ad55786999bbb6f822345d7cfef">More...</a><br /></td></tr>
+<tr class="separator:ga6b584ad55786999bbb6f822345d7cfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga908d23e591803cc8c98d63ba04ff0f1a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga908d23e591803cc8c98d63ba04ff0f1a"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit__manip__h.html#ga908d23e591803cc8c98d63ba04ff0f1a">gul14::bit_test</a> (T bits, unsigned bit) noexcept</td></tr>
+<tr class="memdesc:ga908d23e591803cc8c98d63ba04ff0f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a bit in an integral value.  <a href="group__bit__manip__h.html#ga908d23e591803cc8c98d63ba04ff0f1a">More...</a><br /></td></tr>
+<tr class="separator:ga908d23e591803cc8c98d63ba04ff0f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.17-->

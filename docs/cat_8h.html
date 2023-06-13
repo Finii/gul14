@@ -21,7 +21,7 @@
   <td id="projectlogo"><img alt="Logo" src="gul14.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">General Utility Library for C++14
-   &#160;<span id="projectnumber">2.7</span>
+   &#160;<span id="projectnumber">2.9</span>
    </div>
   </td>
  </tr>
@@ -54,10 +54,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declaration of the overload set for <a class="el" href="namespacegul14.html#a8f160d726ecd0581d66e87d34250f3dd">cat()</a> and of the associated class ConvertingStringView. </p>
+<div class="textblock"><p>Declaration of the overload set for <a class="el" href="group__cat__h.html#ga8f160d726ecd0581d66e87d34250f3dd">cat()</a> and of the associated class ConvertingStringView. </p>
 <dl class="section author"><dt>Author</dt><dd><a class="el" href="contributors_and_copyright.html#contributors">General Utility Library Contributors</a> </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>Created on August 31, 2018</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright 2018-2020 Deutsches Elektronen-Synchrotron (DESY), Hamburg</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright 2018-2023 Deutsches Elektronen-Synchrotron (DESY), Hamburg</dd></dl>
 <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 2.1 of the license, or (at your option) any later version.</p>
 <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
 <p>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. </p>
@@ -112,20 +112,20 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad64e01233c1c469a698c36c9e2f89079"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegul14.html#ad64e01233c1c469a698c36c9e2f89079">gul14::cat</a> ()</td></tr>
-<tr class="memdesc:ad64e01233c1c469a698c36c9e2f89079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efficiently concatenate an arbitrary number of strings and numbers.  <a href="namespacegul14.html#ad64e01233c1c469a698c36c9e2f89079">More...</a><br /></td></tr>
-<tr class="separator:ad64e01233c1c469a698c36c9e2f89079"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9c7a3d661fe67ea5caf4911298c890e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegul14.html#aa9c7a3d661fe67ea5caf4911298c890e">gul14::cat</a> (const ConvertingStringView &amp;s)</td></tr>
-<tr class="separator:aa9c7a3d661fe67ea5caf4911298c890e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaac1958ae0fa576e1135a5f30ce7c3e2"><td class="memItemLeft" align="right" valign="top">GUL_EXPORT std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegul14.html#aaac1958ae0fa576e1135a5f30ce7c3e2">gul14::cat</a> (const ConvertingStringView &amp;s1, const ConvertingStringView &amp;s2)</td></tr>
-<tr class="separator:aaac1958ae0fa576e1135a5f30ce7c3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a619aa48a0c092249f1cfd5e853526783"><td class="memItemLeft" align="right" valign="top">GUL_EXPORT std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegul14.html#a619aa48a0c092249f1cfd5e853526783">gul14::cat</a> (const ConvertingStringView &amp;s1, const ConvertingStringView &amp;s2, const ConvertingStringView &amp;s3)</td></tr>
-<tr class="separator:a619aa48a0c092249f1cfd5e853526783"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbb6e8fb55a42007d2febd6cd7ae8d7a"><td class="memItemLeft" align="right" valign="top">GUL_EXPORT std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegul14.html#afbb6e8fb55a42007d2febd6cd7ae8d7a">gul14::cat</a> (std::initializer_list&lt; ConvertingStringView &gt; pieces)</td></tr>
-<tr class="separator:afbb6e8fb55a42007d2febd6cd7ae8d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f160d726ecd0581d66e87d34250f3dd"><td class="memTemplParams" colspan="2">template&lt;typename... Args, typename  = std::enable_if_t&lt;(sizeof...(Args) &gt; 3)&gt;&gt; </td></tr>
-<tr class="memitem:a8f160d726ecd0581d66e87d34250f3dd"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegul14.html#a8f160d726ecd0581d66e87d34250f3dd">gul14::cat</a> (const Args &amp;... args)</td></tr>
-<tr class="separator:a8f160d726ecd0581d66e87d34250f3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad64e01233c1c469a698c36c9e2f89079"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cat__h.html#gad64e01233c1c469a698c36c9e2f89079">gul14::cat</a> ()</td></tr>
+<tr class="memdesc:gad64e01233c1c469a698c36c9e2f89079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efficiently concatenate an arbitrary number of strings and numbers.  <a href="group__cat__h.html#gad64e01233c1c469a698c36c9e2f89079">More...</a><br /></td></tr>
+<tr class="separator:gad64e01233c1c469a698c36c9e2f89079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9c7a3d661fe67ea5caf4911298c890e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cat__h.html#gaa9c7a3d661fe67ea5caf4911298c890e">gul14::cat</a> (const ConvertingStringView &amp;s)</td></tr>
+<tr class="separator:gaa9c7a3d661fe67ea5caf4911298c890e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaac1958ae0fa576e1135a5f30ce7c3e2"><td class="memItemLeft" align="right" valign="top">GUL_EXPORT std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cat__h.html#gaaac1958ae0fa576e1135a5f30ce7c3e2">gul14::cat</a> (const ConvertingStringView &amp;s1, const ConvertingStringView &amp;s2)</td></tr>
+<tr class="separator:gaaac1958ae0fa576e1135a5f30ce7c3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga619aa48a0c092249f1cfd5e853526783"><td class="memItemLeft" align="right" valign="top">GUL_EXPORT std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cat__h.html#ga619aa48a0c092249f1cfd5e853526783">gul14::cat</a> (const ConvertingStringView &amp;s1, const ConvertingStringView &amp;s2, const ConvertingStringView &amp;s3)</td></tr>
+<tr class="separator:ga619aa48a0c092249f1cfd5e853526783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbb6e8fb55a42007d2febd6cd7ae8d7a"><td class="memItemLeft" align="right" valign="top">GUL_EXPORT std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cat__h.html#gafbb6e8fb55a42007d2febd6cd7ae8d7a">gul14::cat</a> (std::initializer_list&lt; ConvertingStringView &gt; pieces)</td></tr>
+<tr class="separator:gafbb6e8fb55a42007d2febd6cd7ae8d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f160d726ecd0581d66e87d34250f3dd"><td class="memTemplParams" colspan="2">template&lt;typename... Args, typename  = std::enable_if_t&lt;(sizeof...(Args) &gt; 3)&gt;&gt; </td></tr>
+<tr class="memitem:ga8f160d726ecd0581d66e87d34250f3dd"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__cat__h.html#ga8f160d726ecd0581d66e87d34250f3dd">gul14::cat</a> (const Args &amp;... args)</td></tr>
+<tr class="separator:ga8f160d726ecd0581d66e87d34250f3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.17-->

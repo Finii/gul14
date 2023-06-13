@@ -1,11 +1,12 @@
 <map id="optional.h" name="optional.h">
-<area shape="rect" id="node1" title="Implementation of gul14::optional." alt="" coords="393,5,479,32"/>
+<area shape="rect" id="node1" title="Implementation of gul14::optional." alt="" coords="382,5,469,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,75,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="99,80,186,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="210,80,321,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="345,80,431,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="456,80,515,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="539,80,631,107"/>
-<area shape="rect" id="node8" title=" " alt="" coords="655,80,715,107"/>
-<area shape="rect" id="node9" href="$internal_8h.html" title="Definition of macros used internally by GUL." alt="" coords="739,80,863,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="454,155,541,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="150,80,261,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="285,80,371,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="396,80,455,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="479,80,571,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="595,80,655,107"/>
+<area shape="rect" id="node9" href="$internal_8h.html" title="Definition of macros used internally by GUL." alt="" coords="679,80,803,107"/>
+<area shape="rect" id="node10" href="$utility_8h.html" title="Declaration of the in_place_t family of types and constants and of the monostate type." alt="" coords="827,80,938,107"/>
 </map>
